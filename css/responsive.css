@@ -1,0 +1,244 @@
+/* Clearfix for row */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Default styles for columns */
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* Large screens and desktops */
+@media screen and (min-width: 1200px) {
+  /* For desktops */
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .col-1 { width: 8.33%; }
+  .col-2 { width: 16.66%; }
+  .col-3 { width: 25%; }
+  .col-4 { width: 33.33%; }
+  .col-5 { width: 41.66%; }
+  .col-6 { width: 50%; }
+  .col-7 { width: 58.33%; }
+  .col-8 { width: 66.66%; }
+  .col-9 { width: 75%; }
+  .col-10 { width: 83.33%; }
+  .col-11 { width: 91.66%; }
+  .col-12 { width: 100%; }
+}
+
+/* Small screens (landscape phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .col-s-1 { width: 8.33%; }
+  .col-s-2 { width: 16.66%; }
+  .col-s-3 { width: 25%; }
+  .col-s-4 { width: 33.33%; }
+  .col-s-5 { width: 41.66%; }
+  .col-s-6 { width: 50%; }
+  .col-s-7 { width: 58.33%; }
+  .col-s-8 { width: 66.66%; }
+  .col-s-9 { width: 75%; }
+  .col-s-10 { width: 83.33%; }
+  .col-s-11 { width: 91.66%; }
+  .col-s-12 { width: 100%; }
+}
+
+/* Extra small screens (portrait phones) */
+@media screen and (max-width: 575px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .row {
+    max-height: 620px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  
+  .row .welcome {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .row .welcome p {
+    width: 100%;
+    font-size: 22px;
+    max-height: none;
+}
+
+.row .welcome button {
+margin-top: 20px;
+font-size: 18px;
+padding: 10px 20px;
+}
+
+.row .features {
+width: 80%;
+margin: 0 auto;
+}
+
+.row .features .feature {
+width: 100%;
+margin-bottom: 30px;
+}
+
+.row .features .feature img {
+float: left;
+margin-right: 15px;
+width: 30%;
+}
+
+.row .features .feature h3 {
+font-size: 24px;
+margin-bottom: 10px;
+}
+
+.row .features .feature p {
+font-size: 18px;
+line-height: 1.5;
+   }
+}
+
+@media (max-width: 767px) {
+
+.row .welcome{
+ 
+  height: 620px;
+  margin-top: -20px;
+  margin-left: -5px;
+
+}
+    .menu-toggle {
+    display: block;
+    cursor: pointer;
+
+
+  }
+  .menu-toggle i{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 32px;
+    border: 1px solid #fff;
+    padding: 8px 0px 5px 15px;
+    background-color: rgba(125, 0, 0, 0.5);
+    width: 60px;
+    height: 50px;
+    border-radius: 4px;
+    float: right;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    float: none;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+  }
+
+/*.cv .cv1,.cv .cv2{
+  margin-left: 5px;
+}*/
+.cv .cv2 .education{
+
+  height: 80%;
+
+}
+.cv{
+  overflow-y: scroll;
+
+}
+
+  .logo{
+    width: 90%;
+    margin-left: 5%;
+  }
+  .cv .cv1 .experience{
+   display: block;
+   height: 650px;
+   margin-bottom: 0px;
+
+  }
+  .cv .cv1 .career{
+    height: 370px;
+  }
+  .cv .cv2{
+    margin-top: 20px;
+    min-height: 94%;
+  } 
+  .interest{
+
+  overflow-y: none;
+}
+
+  .interest .overlay .in{
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+.contact .formdata{
+  margin-top: 20px;
+  width: 96%;
+  margin-left: 2%;
+}
+.contact .formdata fieldset{
+  width: 80%;
+}
+.contact .formdata fieldset input[type="text"]{
+  width: 80%; 
+}
+.contact .formdata fieldset input[type="email"]{
+  width: 80%;
+
+}
+.contact .formdata fieldset textarea{
+  height: 120px;
+  width: 80%;
+
+}
+.contact .formdata input[type="submit"]{
+  width: 50%;
+  margin-left: 24.5%;
+
+}
+}
+
+
+/* End of code */
+
